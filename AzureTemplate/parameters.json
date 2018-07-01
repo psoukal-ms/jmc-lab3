@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "jmcAksCluster"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "jmcAksCluster"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_D1_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": null
+        },
+        "servicePrincipalClientSecret": {
+            "value": null
+        },
+        "kubernetesVersion": {
+            "value": "1.10.3"
+        },
+        "workspaceName": {
+            "value": "peteroms"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/3adcb36b-e91d-43a8-bf95-84a52c427ce6/resourcegroups/rg-se-au/providers/microsoft.operationalinsights/workspaces/peteroms"
+        },
+        "workspaceRegion": {
+            "value": "australiasoutheast"
+        },
+        "enableHttpApplicationRouting": {
+            "value": true
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        }
+    }
+}

@@ -32,3 +32,9 @@ app.put('/records/:id', function(req, res, next){
 ```
 
 This is for simple seed mean app at it basic level for learning.
+
+# Azure ARM template
+
+ARM template used to deploy (development/test) single node AKS cluster. 
+See ./AzureTemplate
+
