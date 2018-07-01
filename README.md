@@ -38,3 +38,15 @@ This is for simple seed mean app at it basic level for learning.
 ARM template used to deploy (development/test) single node AKS cluster. 
 See ./AzureTemplate
 
+
+# Docker packaging and service composition
+
+- Added Docker file used to package application
+- Added .dockerignore to ensure local folders are excluded in packaging step
+
+
+Service composition
+- Added jmc-kubernetes-web.yaml used to compose node.Js application as "web" service
+- Includes local balancer, service exposed as web, liveness probe, exposing port 80 mapped to internal port 3000.
+
+Ensure that MONGODB_URI is populated in Docker and jmc-kubernetes-web.yaml prior to deployment.
